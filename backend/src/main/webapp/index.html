@@ -55,11 +55,33 @@
                     API.</p>
                 <form>
                     <div class="input-group">
-                        <input type="text" class="form-control input-lg" placeholder="Name"
-                               id="nameInput"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product name"
+                               id="product_name"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product description"
+                               id="product_description"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product price"
+                               id="product_price"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product discount"
+                               id="product_discount"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product image url"
+                               id="product_image"/>
+                        <input type="text" class="form-control input-lg" placeholder="Product category"
+                               id="product_category"/>
+                        <input type="text" class="form-control input-lg" placeholder="From date"
+                               id="from_date"/>
+                        <input type="text" class="form-control input-lg" placeholder="Since date"
+                               id="since_date"/>
+                        <input type="text" class="form-control input-lg" placeholder="Seller name"
+                               id="seller_name"/>
+                        <input type="text" class="form-control input-lg" placeholder="Seller logo url"
+                               id="seller_logo"/>
+                        <input type="text" class="form-control input-lg" placeholder="Shop address"
+                               id="shop_address"/>
+                        <input type="text" class="form-control input-lg" placeholder="Shop working time"
+                               id="shop_working_time"/>
                         <span class="input-group-btn">
                              <button class="btn btn-default btn-primary btn-group btn-lg"
-                                     type="submit" id="helloButton">Say "Hello" &raquo;</button>
+                                     type="submit" id="submit_button">Add product! &raquo;</button>
                           </span>
                     </div>
                 </form>
@@ -88,9 +110,26 @@
 <script type="text/javascript">
     // A function that attaches a "Say Hello" button click handler
     function enableClick() {
-      document.getElementById('helloButton').onclick = function() {
-        var name = document.getElementById('nameInput').value;
-        gapi.client.myApi.sayHi({'name': name}).execute(
+      document.getElementById('submit_button').onclick = function() {
+        var product_name = document.getElementById('product_name').value;
+        var product_description = document.getElementById('product_description').value;
+        var product_price = document.getElementById('product_price').value;
+        var product_discount = document.getElementById('product_discount').value;
+        var product_image = document.getElementById('product_image').value;
+        var product_category = document.getElementById('product_category').value;
+        var from_date = document.getElementById('from_date').value;
+        var since_date = document.getElementById('since_date').value;
+        var seller_name = document.getElementById('seller_name').value;
+        var seller_logo = document.getElementById('seller_logo').value;
+        var shop_address = document.getElementById('shop_address').value;
+        var shop_working_time = document.getElementById('shop_working_time').value;
+        gapi.client.productApi.insert({'name': product_name, 'description': product_description,
+                                    'price': product_price, 'discount': product_discount,
+                                    'image': product_image, 'category': product_category,
+                                    'from_date': from_date, 'since_date': since_date,
+                                    'seller_name': seller_name, 'seller_logo': seller_logo,
+                                    'address': shop_address, 'working_time': shop_working_time,
+                                    }).execute(
           function(response) {
             var outputAlertDiv = document.getElementById('outputAlert');
             outputAlertDiv.style.visibility = 'visible';
@@ -110,7 +149,7 @@
     }
     // This is called initially
     function init() {
-      var apiName = 'myApi';
+      var apiName = 'productApi';
       var apiVersion = 'v1';
       var apiRoot = 'https://' + window.location.host + '/_ah/api';
       if (window.location.hostname == 'localhost'
