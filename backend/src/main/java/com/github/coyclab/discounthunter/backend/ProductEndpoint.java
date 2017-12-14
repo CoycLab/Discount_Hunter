@@ -96,9 +96,6 @@ public class ProductEndpoint {
         final Product product = new Product(name, description, price, discount, image, category,
                                 new Date(from_date), new Date(since_date), seller);
 
-        final String id = String.valueOf(System.identityHashCode(product));
-        product.setId(id);
-
         ofy().save().entity(product).now();
         logger.info("Created Product with ID: " + product.getId());
 

@@ -2,7 +2,7 @@ package com.github.coyclab.discounthunter;
 
 import com.github.coyclab.discounthunter.http.IHttpClient;
 import com.github.coyclab.discounthunter.mocks.Mocks;
-import com.github.coyclab.discounthunter.model.ProductListParser;
+import com.github.coyclab.discounthunter.parser.ProductListParser;
 import com.github.coyclab.discounthunter.model.product.IProductList;
 import com.github.coyclab.discounthunter.utils.Category;
 import com.github.coyclab.discounthunter.utils.Constants;

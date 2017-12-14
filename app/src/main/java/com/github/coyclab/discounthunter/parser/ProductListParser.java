@@ -1,6 +1,5 @@
-package com.github.coyclab.discounthunter.model;
+package com.github.coyclab.discounthunter.parser;
 
-import com.github.coyclab.discounthunter.model.product.IProductListParser;
 import com.github.coyclab.discounthunter.model.product.ProductList;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

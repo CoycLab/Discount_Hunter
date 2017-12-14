@@ -9,16 +9,16 @@ import java.util.Date;
 public class Product {
 
     @Id
-    private String id;
-    private String mName;
-    private String mDescription;
-    private Double mPrice;
-    private int mDiscount;
-    private String mImage;
-    private int mCategory;
-    private Date mFromDate;
-    private Date mSinceDate;
-    private Seller mSeller;
+    private Long id;
+    private String name;
+    private String description;
+    private Double price;
+    private int discount;
+    private String image;
+    private int category;
+    private Date from_date;
+    private Date since_date;
+    private Seller seller;
 
     public Product() {
     }
@@ -26,59 +26,55 @@ public class Product {
     public Product(final String pName, final String pDescription, final Double pPrice,
                    final int pDiscount, final String pImage, final int pCategory,
                    final Date pFromDate, final Date pSinceDate, final Seller pSeller) {
-        mName = pName;
-        mDescription = pDescription;
-        mPrice = pPrice;
-        mDiscount = pDiscount;
-        mImage = pImage;
-        mCategory = pCategory;
-        mFromDate = pFromDate;
-        mSinceDate = pSinceDate;
-        mSeller = pSeller;
+        name = pName;
+        description = pDescription;
+        price = pPrice;
+        discount = pDiscount;
+        image = pImage;
+        category = pCategory;
+        from_date = pFromDate;
+        since_date = pSinceDate;
+        seller = pSeller;
     }
 
-    public void setId(final String pId) {
-        id = pId;
-    }
-
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
     public String getName() {
-        return mName;
+        return name;
     }
 
     public String getDescription() {
-        return mDescription;
+        return description;
     }
 
     public Double getPrice() {
-        return mPrice;
+        return price;
     }
 
     public int getDiscount() {
-        return mDiscount;
+        return discount;
     }
 
     public String getImage() {
-        return mImage;
+        return image;
     }
 
     public int getCategory() {
-        return mCategory;
+        return category;
     }
 
     public Date getFromDate() {
-        return mFromDate;
+        return from_date;
     }
 
     public Date getSinceDate() {
-        return mSinceDate;
+        return since_date;
     }
 
     public Seller getSeller() {
-        return mSeller;
+        return seller;
     }
 
 }
