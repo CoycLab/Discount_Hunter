@@ -1,52 +1,65 @@
-{
-  "products": [
-    {
-      "name": "Computer",
-      "description": "Computer. Cool computer",
-      "price": "5.95",
-      "discount": "10",
-      "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
-      "category": 1,
-      "from_date": 1505174400000,
-      "since_date": 1511049600000,
-      "seller": {
-        "seller_name": "Columbia",
-        "seller_logo": "https://im0-tub-by.yandex.net/i?id=85788cae39bbe61ef2767891241986ae-sr&n=13",
-        "shop_list": [
-          {
-            "address": "Solomovoy, 80",
-            "working_time": "09.00 - 23.00"
-          },
-          {
-            "address": "Chaykinoy, 10",
-            "working_time": "09.00 - 23.00"
-          }
-        ]
-      }
+[
+  {
+    "category": 3,
+    "description": "Potato from Belarus",
+    "discount": 3,
+    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "id": "4785074604081152",
+    "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
+    "name": "Potato",
+    "price": 5.95,
+    "seller": {
+      "seller_logo": "https://im0-tub-by.yandex.net/i?id=85788cae39bbe61ef2767891241986ae-sr&n=13",
+      "seller_name": "Belmarket",
+      "shop_list": [
+        {
+          "address": "Solomovoy, 80",
+          "working_time": "09.00 - 23.00"
+        }
+      ]
     },
-    {
-      "name": "TV",
-      "description": "Flat TV",
-      "price": "150.00",
-      "discount": "20",
-      "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
-      "category": 6,
-      "from_date": 1505174400000,
-      "since_date": 1511049600000,
-      "seller": {
-        "seller_name": "Fifth Element",
-        "seller_logo": "https://im0-tub-by.yandex.net/i?id=85788cae39bbe61ef2767891241986ae-sr&n=13",
-        "shop_list": [
-          {
-            "address": "Solomovoy, 80",
-            "working_time": "09.00 - 23.00"
-          },
-          {
-            "address": "Chaykinoy, 10",
-            "working_time": "09.00 - 23.00"
-          }
-        ]
-      }
-    }
-  ]
-}
+    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+  },
+  {
+    "category": 6,
+    "description": "Computer. Cool computer",
+    "discount": 20,
+    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "id": "5066549580791808",
+    "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
+    "name": "Computer",
+    "price": 150.0,
+    "seller": {
+      "seller_logo": "https://im0-tub-by.yandex.net/i?id=85788cae39bbe61ef2767891241986ae-sr&n=13",
+      "seller_name": "Columbia",
+      "shop_list": [
+        {
+          "address": "Solomovoy, 80",
+          "working_time": "09.00 - 23.00"
+        }
+      ]
+    },
+    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+  },
+  {
+    "category": 1,
+    "description": "Flat TV",
+    "discount": 10,
+    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "id": "6192449487634432",
+    "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
+    "name": "TV",
+    "price": 100.0,
+    "seller": {
+      "seller_logo": "https://im0-tub-by.yandex.net/i?id=85788cae39bbe61ef2767891241986ae-sr&n=13",
+      "seller_name": "Fifth Element",
+      "shop_list": [
+        {
+          "address": "Solomovoy, 80",
+          "working_time": "09.00 - 23.00"
+        }
+      ]
+    },
+    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+  }
+]
