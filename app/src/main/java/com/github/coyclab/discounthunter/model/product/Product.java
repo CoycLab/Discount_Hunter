@@ -7,15 +7,20 @@ import java.util.Date;
 
 public class Product implements IProduct {
 
+
+    private static final String ID = "id";
     private static final String NAME = "name";
     private static final String DESCRIPTION = "description";
     private static final String PRICE = "price";
     private static final String DISCOUNT = "discount";
     private static final String IMAGE = "image";
     private static final String CATEGORY = "category";
-    private static final String FROM_DATE = "from_date";
-    private static final String SINCE_DATE = "since_date";
+    private static final String FROM_DATE = "fromDate";
+    private static final String SINCE_DATE = "sinceDate";
     private static final String SELLER = "seller";
+
+    @SerializedName(ID)
+    private Long mId;
 
     @SerializedName(NAME)
     private String mName;
@@ -43,6 +48,11 @@ public class Product implements IProduct {
 
     @SerializedName(SELLER)
     private Seller mSeller;
+
+    @Override
+    public Long getID() {
+        return mId;
+    }
 
     @Override
     public String getName() {

@@ -94,7 +94,7 @@ public class ProductEndpoint {
         final Seller seller = new Seller(seller_name, shopList, seller_logo);
 
         final Product product = new Product(name, description, price, discount, image, category,
-                                new Date(from_date), new Date(since_date), seller);
+                                from_date, since_date, seller);
 
         ofy().save().entity(product).now();
         logger.info("Created Product with ID: " + product.getId());

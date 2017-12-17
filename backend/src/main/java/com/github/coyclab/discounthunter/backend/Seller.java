@@ -27,31 +27,15 @@ class Seller {
         return id;
     }
 
-    public void setId(Long pId) {
-        id = pId;
-    }
-
     public String getSeller_name() {
         return seller_name;
-    }
-
-    public void setSeller_name(String pSeller_name) {
-        seller_name = pSeller_name;
     }
 
     public List<Shop> getShop_list() {
         return shop_list;
     }
 
-    public void setShop_list(List<Shop> pShop_list) {
-        shop_list = pShop_list;
-    }
-
     public String getSeller_logo() {
         return seller_logo;
-    }
-
-    public void setSeller_logo(String pSeller_logo) {
-        seller_logo = pSeller_logo;
     }
 }

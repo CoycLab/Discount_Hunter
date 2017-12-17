@@ -7,10 +7,13 @@ import java.util.List;
 
 public class Seller implements ISeller {
 
+    private static final String ID = "id";
     private static final String SELLER_NAME = "seller_name";
     private static final String SELLER_LOGO = "seller_logo";
     private static final String SHOP_LIST = "shop_list";
 
+    @SerializedName(ID)
+    private Long mId;
 
     @SerializedName(SELLER_NAME)
     private String mName;
@@ -20,6 +23,11 @@ public class Seller implements ISeller {
 
     @SerializedName(SELLER_LOGO)
     private String mSellerLogo;
+
+    @Override
+    public Long getID() {
+        return mId;
+    }
 
     @Override
     public String getName() {

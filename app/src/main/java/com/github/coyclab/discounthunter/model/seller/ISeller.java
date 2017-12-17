@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface ISeller {
 
+    Long getID();
+
     String getName();
 
     List<Shop> getShopList();

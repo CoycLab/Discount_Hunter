@@ -23,23 +23,12 @@ class Shop {
         return id;
     }
 
-    public void setId(Long pId) {
-        id = pId;
-    }
-
     public String getAddress() {
         return address;
-    }
-
-    public void setAddress(String pAddress) {
-        address = pAddress;
     }
 
     public String getWorking_time() {
         return working_time;
     }
 
-    public void setWorking_time(String pWorking_time) {
-        working_time = pWorking_time;
-    }
 }

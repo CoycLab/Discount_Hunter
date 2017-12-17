@@ -13,6 +13,10 @@ public class ProductList implements IProductList {
     @SerializedName(PRODUCTS)
     private List<Product> mProductList;
 
+    public ProductList(final List<Product> pProductList) {
+        mProductList = pProductList;
+    }
+
     @Override
     public List<Product> getProductList() throws JSONException {
         return mProductList;

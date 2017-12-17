@@ -16,8 +16,8 @@ public class Product {
     private int discount;
     private String image;
     private int category;
-    private Date from_date;
-    private Date since_date;
+    private Long from_date;
+    private Long since_date;
     private Seller seller;
 
     public Product() {
@@ -25,7 +25,7 @@ public class Product {
 
     public Product(final String pName, final String pDescription, final Double pPrice,
                    final int pDiscount, final String pImage, final int pCategory,
-                   final Date pFromDate, final Date pSinceDate, final Seller pSeller) {
+                   final Long pFromDate, final Long pSinceDate, final Seller pSeller) {
         name = pName;
         description = pDescription;
         price = pPrice;
@@ -65,11 +65,11 @@ public class Product {
         return category;
     }
 
-    public Date getFromDate() {
+    public Long getFromDate() {
         return from_date;
     }
 
-    public Date getSinceDate() {
+    public Long getSinceDate() {
         return since_date;
     }
 

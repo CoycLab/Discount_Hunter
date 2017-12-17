@@ -3,7 +3,7 @@
     "category": 3,
     "description": "Potato from Belarus",
     "discount": 3,
-    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "fromDate": "1505174400000",
     "id": "4785074604081152",
     "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
     "name": "Potato",
@@ -18,13 +18,13 @@
         }
       ]
     },
-    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+    "sinceDate": "1513036800000"
   },
   {
     "category": 6,
     "description": "Computer. Cool computer",
     "discount": 20,
-    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "fromDate": "1505174400000",
     "id": "5066549580791808",
     "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
     "name": "Computer",
@@ -39,13 +39,13 @@
         }
       ]
     },
-    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+    "sinceDate": "1513036800000"
   },
   {
     "category": 1,
     "description": "Flat TV",
     "discount": 10,
-    "fromDate": "2017-09-12T02:00:00.000+02:00",
+    "fromDate": "1505174400000",
     "id": "6192449487634432",
     "image": "http://slavdvor.ru/img/b2ap3_thumbnail_akson-logo.png",
     "name": "TV",
@@ -60,6 +60,6 @@
         }
       ]
     },
-    "sinceDate": "2017-11-19T02:00:00.000+02:00"
+    "sinceDate": "1513036800000"
   }
 ]

@@ -8,6 +8,8 @@ import android.widget.Button;
 import com.github.coyclab.discounthunter.R;
 import com.github.coyclab.discounthunter.loaders.ProductListLoader;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,5 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 new ProductListLoader().execute(getApplicationContext());
             }
         });
+
+        Date date = new Date(1505174400000L);
     }
 }

@@ -6,6 +6,8 @@ import java.util.Date;
 
 public interface IProduct {
 
+    Long getID();
+
     String getName();
 
     String getDescription();
